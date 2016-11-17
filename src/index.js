@@ -50,6 +50,6 @@ export {
   patch,
   post,
   put,
-  sayMyName,
+  testInit,
   init,
 };
