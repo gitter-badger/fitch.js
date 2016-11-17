@@ -1,4 +1,9 @@
 import request from './utils/request';
+import init from './utils/init';
+
+function testInit() {
+  return this.baseURL;
+}
 
 function get(url, req) {
   return request('GET', url, req);
@@ -31,6 +36,9 @@ const fitch = {
   patch,
   post,
   put,
+  request,
+  testInit,
+  init,
 };
 
 export default fitch;
@@ -42,4 +50,6 @@ export {
   patch,
   post,
   put,
+  sayMyName,
+  init,
 };
